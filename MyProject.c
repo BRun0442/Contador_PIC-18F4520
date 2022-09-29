@@ -11,14 +11,14 @@ void main() {
   {
     if(PORTB.rb0 == 0)
     {
-            delay_ms(500);
-            LATD = (LATD - 1)/2;
+     delay_ms(500);
+     LATD = (LATD - 1)/2;
     }
 
     if(PORTB.rb1 == 0)
     {
-            delay_ms(500);
-            LATD = LATD + LATD + 1;
+     delay_ms(500);
+     LATD += LATD + 1;
     }
   }
 }
